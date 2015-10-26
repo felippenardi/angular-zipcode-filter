@@ -1,0 +1,34 @@
+{
+  "name": "angular-zipcode-filter",
+  "version": "0.0.1",
+  "description": "AngularJS filter to automatically format long and short zipcodes.",
+  "author": "Felippe Nardi <felippe.ng-zipcode@nardi.me> (http://www.nardi.me/)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:felippenardi/angular-zipcode-filter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/felippenardi/angular-zipcode-filter/issues"
+  },
+  "keywords": [
+    "angularjs",
+    "zipcode",
+    "filter"
+  ],
+  "dependencies": {
+    "angular": "^1.2.15"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-nodeunit": "",
+    "karma": "~0.12.1",
+    "grunt-karma": "~0.8.2",
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "~0.1.2",
+    "grunt-contrib-uglify": "~0.4.0"
+  },
+  "license": "GPL-2.0"
+}
