@@ -9,7 +9,7 @@
   "authors": [
     "Felippe Nardi <felippe.ng-zipcode@nardi.me> (http://www.nardi.me/)"
   ],
-  "description": "AngularJS filter to automatically format long and short zipcodes.",
+  "description": "AngularJS filter to automatically format long and short zip codes.",
   "main": "zipcode.js",
   "keywords": [
     "angularjs",
