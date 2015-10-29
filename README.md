@@ -34,12 +34,12 @@ angular.module('webApp', ['angular-zipcode-filter']);
 You can use it like any other AngularJS filter:
 
 ```html
-<p>{{ 028861617 | zipcode }}</p>
+<p>{{ 928861617 | zipcode }}</p>
 ```
 
 The output will be:
 ```html
-<p>02886-1617</p>
+<p>92886-1617</p>
 ```
 
 ## Testing

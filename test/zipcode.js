@@ -11,7 +11,7 @@ describe('Filter: zipcode', function () {
     zipcode = $filter('zipcode');
   }));
 
-  it('adds a dash after the 5th chacater of a 9-digit zip code', function () {
+  it('adds a dash after the 5th character of a 9-digit zip code', function () {
     var input = 981222735;
     expect(zipcode(input)).toBe('98122-2735');
   });
@@ -25,8 +25,11 @@ describe('Filter: zipcode', function () {
     expect(zipcode(1234567890)).toBe(1234567890);
   });
 
-  it('does nothing if input is invalid', function () {
+  it('does nothing if input is undefined', function () {
     expect(zipcode()).toBe();
   });
 
+  it('does nothing if input is null', function () {
+    expect(zipcode(null)).toBe(null);
+  });
 });

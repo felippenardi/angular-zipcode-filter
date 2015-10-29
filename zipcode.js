@@ -6,6 +6,8 @@
  * @author Felippe Nardi <felippe.ng-zipcode@nardi.me>
  *
  * @param {number} input the number to be formatted.
+ *
+ * @return {string|number}
  */
 angular.module('angular-zipcode-filter',[])
   .filter('zipcode', function () {
@@ -13,12 +15,11 @@ angular.module('angular-zipcode-filter',[])
       if (!input) {
         return input;
       }
-      if (input.toString().length === 9) {
-        return input.toString().slice(0, 5) + "-" + input.toString().slice(5);
-      } else if (input.toString().length === 5) {
-        return input.toString();
-      } else {
-        return input;
+      if (String(input).length === 9) {
+        return String(input).slice(0, 5) + "-" + String(input).slice(5);
+      } else if (String(input).length === 5) {
+        return String(input);
       }
+      return input;
     };
   });
